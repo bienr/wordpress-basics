@@ -139,3 +139,15 @@ footer {
     border-bottom: 1px solid #eee;
     color: #333;
 }
+.post h4 {
+    margin-bottom: 0;
+}
+.post-info {
+    font-size: 85%;
+    color: #999;
+    margin-top: 5px;
+}
+.post-info a:link,
+.post-info a:visited {
+    color: #999;
+}

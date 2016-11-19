@@ -21,7 +21,6 @@ function get_ancestors_top() {
 
 function has_children() {
     global $post;
-
     $pages = get_pages("child_of=" . $post->ID);
     return count($pages);
 }
