@@ -17,10 +17,7 @@
                     echo trim($output, $separator);
                 ?>
             </p>
-            <p>
-            <?php echo get_the_excerpt(); ?>
-            <a href="<?php the_permalink(); ?>">Read more &raquo;</a>
-            </p>
+            <?php the_content(); ?>
         </article>
 <?php endwhile; else : ?>
     <h4>No content found</h4>

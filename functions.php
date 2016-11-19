@@ -24,3 +24,9 @@ function has_children() {
     $pages = get_pages("child_of=" . $post->ID);
     return count($pages);
 }
+
+function custom_excerpt_length() {
+    return 30;
+}
+
+add_filter("excerpt_length", "custom_excerpt_length");
