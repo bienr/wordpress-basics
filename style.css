@@ -1,0 +1,141 @@
+/*
+Theme name: Bien Site
+Author: Bien Angelo Relucano
+Author URI: http://google.com.ph
+Version: 1.0
+*/
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+}
+div.container {
+    max-width: 920px;
+    margin: 0 auto;
+}
+a:link, a:visited {
+    color: #006ec3;
+}
+header {
+    border-bottom: 2px solid #333;
+}
+article {
+    border-bottom: 1px solid #aaa;
+}
+article:last-of-type {
+    border-bottom: none;
+}
+footer {
+    border-top: 2px solid #333;
+}
+.site-nav ul {
+    margin: 0;
+    padding: 0;
+}
+.site-nav ul:before, 
+.site-nav ul:after {
+    content: "";
+    display: table;
+}
+.site-nav ul:after {
+    clear: both;
+}
+.site-nav ul {
+    *zoom: 1;
+}
+.site-nav ul li {
+    list-style: none;
+    float: left;
+}
+.site-header nav ul li {
+    margin-right: 5px;
+}
+.site-header nav ul li a:link, 
+.site-header nav ul li a:visited {
+    display: block;
+    padding: 10px 18px;
+    border: 1px solid #bbb;
+    border-bottom: none;
+    text-decoration: none;
+}
+.site-header nav ul li a:hover {
+    background-color: #ececec;
+}
+.site-header nav ul li.current-menu-item a:link,
+.site-header nav ul li.current-menu-item a:visited,
+.site-header nav ul li.current-page-ancestor a:link,
+.site-header nav ul li.current-page-ancestor a:visited {
+    background-color: #006ec3;
+    color: #fff;
+}
+
+.site-footer nav ul li a {
+    margin-right: 10px;
+    padding-right: 10px;
+    display: block;
+    border-right: 1px solid #bbb;
+}
+.site-footer nav ul li:last-of-type {
+    border-right: none;
+}
+.title-column {
+    width: 30%;
+    float: left;
+}
+.content-column {
+    width: 70%;
+    float: left;
+}
+.title-column-contact {
+    width: 20%;
+    color: #006ec3;
+    float: left;
+}
+.content-column-contact {
+    width: 80%;
+    float: left;
+}
+.content-justified {
+    text-align: justify;
+}
+.info-box {
+    float: right;
+    width: 30%;
+    background-color: #ececec;
+    margin: 0 0 30px 30px;
+    padding: 20px;
+}
+.info-box h4 {
+    margin-bottom: 6px;
+}
+.info-box p {
+    font-size: 85%;
+}
+.children-links {
+    font-size: 12px;
+}
+.children-links a:link, .children-links a:visited {
+    text-decoration: none;
+}
+.children-links li {
+    margin-right: 20px;
+}
+.children-links li a {
+    display: block;
+    padding: 16px 0;
+    text-decoration: none;
+}
+.children-links .parent-link {
+    float: left;
+    margin-right: 20px;
+    padding-right: 20px;
+    border-right: 1px solid #eee;
+}
+.children-links .parent-link h4 {
+    color: #333;
+}
+.children-links .current_page_item a:link,
+.children-links .current_page_item a:visited {
+    border-bottom: 1px solid #eee;
+    color: #333;
+}
