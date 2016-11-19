@@ -1,6 +1,9 @@
 <?php get_header();
     if (have_posts()) : while (have_posts()) : the_post(); ?>
-        <article class="post">
+        <article class="post <?php if (has_post_thumbnail()) { ?>has-thumbnail<?php } ?>">
+            <div class="post-thumbnail">
+                <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail("small-thumbnail"); ?></a>
+            </div>
             <a href="<?php the_permalink(); ?>"><h4><?php the_title(); ?></h4></a>
             <p class="post-info">
                 <?php the_time("F jS, Y"); ?> by
@@ -18,7 +21,12 @@
                 ?>
             </p>
             <p>
-            <?php echo get_the_excerpt(); ?>
+            <?php
+                if (has_excerpt()) {
+                    echo get_the_excerpt();
+                } else {
+                    the_content();
+                } ?>
             <a href="<?php the_permalink(); ?>">Read more &raquo;</a>
             </p>
         </article>
