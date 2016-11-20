@@ -8,6 +8,9 @@
     <body>
         <div class="container">
             <header class="site-header">
+                <div class="hd-search">
+                    <?php get_search_form(); ?>
+                </div>
                 <a href="<?php echo home_url(); ?>"><h1><?php bloginfo('name'); ?></h1></a>
                 <h4>
                     <?php bloginfo('description') ?>

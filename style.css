@@ -8,6 +8,10 @@ Version: 1.0
 body {
     font-family: Helvetica, Arial, sans-serif;
     font-size: 14px;
+    color: #555;
+}
+p {
+    line-height: 1.3em;
 }
 div.container {
     max-width: 920px;
@@ -165,4 +169,23 @@ img {
     position: absolute;
     left: 0;
     top: 0;
+}
+
+.hd-search {
+    float: right;
+}
+.hd-search span {
+    position: absolute;
+    left: -9999px;
+}
+.hd-search .search-submit {
+    background-color: #006ec3;
+    color: #fff;
+    padding: 4px 14px;
+    border-style: none;
+    border-radius: 5px;
+    vertical-align: top;
+}
+.hd-search .search-field {
+    vertical-align: top;
 }
