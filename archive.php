@@ -25,7 +25,7 @@
 
     <?php
         while (have_posts()) : the_post();
-            get_template_part("content");
+            get_template_part("content", get_post_format());
         endwhile; else : ?>
     <h4>No content found</h4>
 <?php endif;

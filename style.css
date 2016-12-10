@@ -189,3 +189,44 @@ img {
 .hd-search .search-field {
     vertical-align: top;
 }
+article.post-aside,article.post-link {
+    font-size: 125%;
+    background-color: #fff5cb;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, .1);
+    -moz-box-shadow: 3px 3px 3px rgba(0, 0, 0, .1);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .1);
+}
+article.post-link{
+    background-color: #f5cbff;;
+}
+article.post-gallery {
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+}
+article.post-gallery h2 {
+    text-align: center;
+}
+article.post-gallery img {
+    border: none !important;
+}
+.mini-meta {
+    margin: 0;
+    font-size: 70%;
+    color: #777;
+}
+.main-column {
+    float: left;
+    width: 66%;
+}
+.secondary-column {
+    float: right;
+    width: 30%;
+}
+.clearfix {
+    clear: both;
+    display: inline-block;
+}
