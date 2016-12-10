@@ -13,9 +13,7 @@
     <?php endif; ?>
     </div>
 
-    <div class="secondary-column">
-        This is the sidebar...
-    </div>
+    <?php get_sidebar(); ?>
 </div>
 <?php get_footer();
 ?>
